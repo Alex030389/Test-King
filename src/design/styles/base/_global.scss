@@ -1,0 +1,164 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f0f2fc+30,f0f2fc+30,f0f2fc+70,ffffff+100 */
+  background: linear-gradient(to right, #ffffff 0%, #F0F2FC 30%, #F0F2FC 30%, #F0F2FC 70%, #ffffff 100%);
+  font-size: $fsz-main;
+  font-family: $ff-main;
+  color: $c-main;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  border: none;
+  max-width: 100%;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+  // word-wrap: normal;
+}
+
+select::-ms-expand {
+  // display: none;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+::-moz-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+:focus {
+  outline: none;
+}
+
+// .no-touch {
+//   &:hover,
+//   &:focus {
+
+//   }
+// }
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+/* Правильный курсор. Так как задизейбленной кнопкой может быть ссылка, то псевдокласс уже не сработает, так как ссылка не элемент формы. Для этого добавляйте класс */
+:disabled,
+.disabled {
+  cursor: not-allowed;
+}
+
+/* удаляет крестик в input ie */
+::-ms-clear {
+  display: none;
+}
+
+/* изменить цвет автозаполнения формы */
+:-webkit-autofill {
+  box-shadow: 0 0 100px #fff inset;
+  -webkit-text-fill-color: currentColor;
+}
+
+//.footer {
+//  margin-top: auto;
+//}

@@ -1,0 +1,28 @@
+.list {
+
+  &__item {
+    font-size: 13px;
+    padding: 3px 0 3px 30px;
+    background: url(/design/images/icon/item.png) 1px top no-repeat;
+    line-height: 16px;
+
+    &._small {
+      font-size: 12px;
+      padding-bottom: 0;
+    }
+
+    &._v2 {
+      background: url(/design/images/icon_check.png) 0px 2px no-repeat;
+      padding-left: 20px;
+    }
+
+    &._v3 {
+      background: url(/design/images/smlist.png) 0px 2px no-repeat;
+      padding-left: 20px;
+    }
+  }
+
+  &__item-big {
+
+  }
+}

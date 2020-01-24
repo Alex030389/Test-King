@@ -1,0 +1,69 @@
+// ================================================ 870
+.w870-show-flex {
+  display: none;
+
+  @media (max-width: 870px) {
+    display: flex;
+  }
+}
+
+// ================================================ md
+.md-hide {
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.md-show {
+  display: none;
+  @media (max-width: $md) {
+    display: block;
+  }
+}
+
+.md-show-flex {
+  display: none;
+  @media (max-width: $md) {
+    display: flex;
+  }
+}
+
+// ================================================ sm
+.sm-hide {
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.sm-show {
+  display: none;
+
+  @media (max-width: $sm) {
+    display: block;
+  }
+}
+
+.sm-show-flex {
+  display: none;
+
+  @media (max-width: $sm) {
+    display: flex;
+  }
+}
+
+
+// ================================================ xsm
+.xsm-hide {
+
+  @media (max-width: $xsm) {
+    display: none;
+  }
+}
+
+.xsm-show {
+  display: none;
+
+  @media (max-width: $xsm) {
+    display: block;
+  }
+}
