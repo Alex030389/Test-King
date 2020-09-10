@@ -106,9 +106,13 @@
   text-decoration: underline;
 }
 
+.mfp-close {
+  cursor: pointer !important;
+}
+
 // якоря используются когда нужно увидеть место условия в шаблоне смарти.
 // при разработке закомментировать display: none;
 .my-anchor {
-  //display: none;
+  display: none;
   color: red;
 }

@@ -164,6 +164,18 @@ $('body').mouseup(function(even) {
 });
 
 // ======================================================= tab
+
+// if($('.level-1').empty()) {
+//   console.log('empty')
+// }
+
+// $('.tab__btn:nth-child(1)').removeClass('active');
+// $('.tab__btn:nth-child(2)').addClass('active');
+// $('.tab-content__item:nth-child(1)').hide();
+// $('.tab-content__item:nth-child(2)').show();
+
+
+
 $('.tab__btn').on('click', function () {
   let id = $('.tab__btn').index(this);
 
@@ -415,6 +427,7 @@ if(document.querySelector('.video-level-2__header._open')) {
     })
   }
 }
+
 
 
 function makeVideoList(videoLevel2Headers) {

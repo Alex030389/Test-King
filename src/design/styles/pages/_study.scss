@@ -18,5 +18,10 @@
 }
 
 .pagination {
-  padding-top: 10px;
+  padding-top: 15px;
+
+  a {
+    color: $c-link-dark;
+    text-decoration: underline;
+  }
 }

@@ -3,6 +3,15 @@
     padding: 5px 10px;
     width: 120px;
     margin-bottom: 15px;
+
+    &._mb_24 {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__img-cards {
+    padding-top: 4px;
+    margin-bottom: 16px;
   }
 }
 
@@ -14,5 +23,109 @@
       border-bottom: 1px solid $c-hr-lite-grey;
       margin-bottom: 15px;
     }
+  }
+}
+
+.form-paynow {
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__terms {
+    margin-bottom: 16px;
+
+    input {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.box-form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -20px;
+
+  &._mb_10 {
+    margin-bottom: 10px;
+  }
+
+  &._mb_0 {
+    margin-bottom: 0;
+  }
+}
+
+.form-group {
+  margin: 0 10px 16px;
+  width: calc(100% / 2 - 20px);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ced2d6;
+    width: 100%;
+    padding: 4px 3px 3px;
+    box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.05);
+    height: 24px;
+  }
+
+  label {
+    margin-bottom: 4px;
+  }
+}
+
+.box-date-cvv {
+  display: flex;
+
+  select {
+    margin-right: 8px;
+    flex-shrink: 2;
+
+    @media (max-width: $sm) {
+      flex-shrink: 10;
+    }
+  }
+}
+
+.box-cvv {
+  position: relative;
+  flex-shrink: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 1px;
+    height: 14px;
+    background-color: $c-hr-lite-grey;
+    z-index: 10;
+  }
+
+  label {
+    position: absolute;
+    top: -19px;
+    left: 0;
+  }
+
+  input {
+    padding-right: 40px;
+  }
+
+  img {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 26px;
   }
 }

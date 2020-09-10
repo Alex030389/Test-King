@@ -159,9 +159,22 @@
     }
   }
 
+  &__crutch-login {
+    opacity: 0;
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
 
   &__btn {
     margin-top: auto;
     padding: 9px 27px;
+
+  }
+
+  &__privacy-policy {
+    color: green;
+    padding-top: 15px;
   }
 }
