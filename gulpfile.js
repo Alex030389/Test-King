@@ -51,6 +51,11 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/design/fonts/'))
 });
 
+gulp.task('libsFolder', function () {
+  return gulp.src('src/design/libs/**/*')
+    .pipe(gulp.dest('dist/design/libs/'))
+});
+
 gulp.task('css:libs', function () {
   return gulp.src('src/design/styles/libs.scss')
     .pipe(sass())
@@ -100,8 +105,6 @@ gulp.task('js:libs', function () {
   return gulp.src([
       'node_modules/slick-carousel/slick/slick.min.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-      'node_modules/plyr/dist/plyr.polyfilled.min.js',
-      'node_modules/plyr/dist/plyr.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -199,12 +202,13 @@ gulp.task('default', gulp.series(
   gulp.parallel(
     'html',
     'fonts',
+    'libsFolder',
     'css:libs',
     'css',
-    'css:build-host',
+    // 'css:build-host',
     'js:libs',
     'js',
-    'js:build-host',
+    // 'js:build-host',
     'watch',
     'browser-sync'
   )));
@@ -215,6 +219,7 @@ gulp.task('build', gulp.series(
   gulp.parallel(
     'html',
     'fonts',
+    'libsFolder',
     'css:libs',
     'css:build',
     'js:libs',
